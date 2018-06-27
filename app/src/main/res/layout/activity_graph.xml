@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout"
+    tools:context="com.abhi.optumsoftchallenge.view.GraphActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/sensor_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensors" />
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/sensor_button"
+            android:layout_toRightOf="@+id/sensor_button" >
+
+            <RadioButton
+                android:id="@+id/recent_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent" />
+
+            <RadioButton
+                android:id="@+id/minutes_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minutes" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
